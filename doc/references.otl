@@ -1,0 +1,74 @@
+﻿Turbofans
+	Some NASA lectures:
+		Specific thrust and some related equations:
+		: http://www.grc.nasa.gov/WWW/k-12/airplane/specth.html
+		Turbofan:
+		: http://www.grc.nasa.gov/WWW/k-12/airplane/turbfan.html
+		EngineSim applet:
+		: http://www.grc.nasa.gov/WWW/k-12/airplane/ngnsim.html
+		Explanation of the applet:
+		: http://www.grc.nasa.gov/WWW/K-12/airplane/EngineTheory.pdf
+	Some Stanford lectures:
+		: http://adg.stanford.edu/aa241/AircraftDesign.html
+	TURBOJET ANALYTICAL MODEL DEVELOPMENT AND VALIDATION
+	: http://www.icas.org/ICAS_ARCHIVE/ICAS2012/PAPERS/537.PDF
+	: contains some thrust/rpm and other graphs and equations
+	Parameters for many existing engines
+	: http://www.jet-engine.net/civtfspec.html
+	: http://adg.stanford.edu/aa241/propulsion/largefan.html
+	: http://adg.stanford.edu/aa241/propulsion/smallfan.html
+	: http://adg.stanford.edu/aa241/propulsion/ssengines.html
+		CFM
+		: http://www.cfmaeroengines.com/
+		: They have data about CFM-56, but not CFM-LeapX. But we could at
+		: least estimate SFC by reducing that by 15%.
+		GE
+		: http://www.geaviation.com/commercial/engines/genx/
+		: Not relevant for A320neo, but they have similar bypass ratio, so
+		: I suppose similar Ve and mass flow is given that allows calculating
+		: it.
+	Gas turbine performance
+	: https://books.google.cz/books?id=DtFml9BQkEIC
+	: Only sample available; not sure how much of it is available and how
+	: useful it would be
+	Efficiency
+		http://aviation.stackexchange.com/questions/19458/how-does-turbofan-engine-performance-depend-on-speed-and-density-altutude/19466
+		: efficienty, complete derivation
+		http://aviation.stackexchange.com/questions/21758/how-is-mass-flow-rate-computed
+		https://www.grc.nasa.gov/www/k-12/airplane/isentrop.html
+		: these two give some explanation of the variables and relationships
+		https://www.grc.nasa.gov/www/k-12/airplane/inleth.html
+		: inlet efficiency; relies on the previous; the first is more directly
+		: usable
+Efficiency
+	Optimum cruise level
+	: http://aviation.stackexchange.com/questions/12541/why-are-many-jet-aircraft-designed-to-cruise-around-fl350-370/12569#12569
+	Optimum cruise speed, including wind effects
+	: http://aviation.stackexchange.com/questions/3612/how-does-wind-affect-the-airspeed-that-i-should-fly-for-maximum-range-in-an-airp/3623#3623
+Gear
+	Vertical speed at landing
+	> regulatory requirements for landing gear design are based on a sink rate
+	> of 6 feet per second at the maximum design takeoff weight, while the
+	> usual sink rate is nearly half of that.
+	: http://aviation.stackexchange.com/a/21537/524
+	: This could be used for guesstimating the spring constant of the shock
+	: absorber. (6 ft/s = 360 ft/min)
+Mad ideas:
+	Freezing stabilizer (A330 is explicitly mentioned):
+	: http://avherald.com/h?article=48cdc7dc&opt=0
+	> By airbusdriver on Friday, Sep 25th 2015 17:55Z:
+	>
+	> I don't know how that 'superjet' is constructed but in other modern
+	> aircraft like airbuses the whole stabilizer is moved to trim. There are
+	> no trim tabs to use if the stabilizer is jammed - you just have to use
+	> more force on the elevator and of course the AP is unavailable. It's
+	> a bit tricky flying like this - if you ease your concentration for
+	> a moment your pitch wanders all over the sky. Depending on the jammed
+	> stabilizers position you have to observe a speed limit to keep the thing
+	> manoeuvrable. In a a330 for example you have a max speed of 180 kts if
+	> the frozen stabilizers angle is more than 8° up.
+	>
+	> A jammed stabilizer is a nice detail to add in a simulator session in
+	> order not bore you with only an engine fire, a decompression and
+	> a disabled co-pilot.
+

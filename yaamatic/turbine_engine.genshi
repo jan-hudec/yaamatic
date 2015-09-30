@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<turbine_engine
+    xmlns:py="http://genshi.edgewall.org/"
+    name="${name}">
+    <milthrust unit="LBS">${thrust('lbf')}</milthrust>
+    <!-- TODO FIXME: derive bypassratio from t_spool! -->
+    <bypassratio>${bypassratio}</bypassratio>
+    <tsfc>${tsfc('lb/h/lbf')}</tsfc>
+    <idlen1>${n1_idle}</idlen1>
+    <idlen2>${n2_idle}</idlen2>
+    <maxn1>${n1_max}</maxn1>
+    <maxn2>${n2_max}</maxn2>
+    <!-- TODO: augmentation and injection not supported yet -->
+    <augmented>0</augmented>
+    <injected>0</injected>
+
+    <function name="IdleThrust">
+	<table>
+	    <independentVar lookup="row">velocities/mach</independentVar>
+	    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+	    <tableData>
+${table2(idle_thrust_table, frange(0., 1.4, 14), range(-5000, 50001, 5000))}
+	    </tableData>
+	</table>
+    </function>
+    <function name="MilThrust">
+	<table>
+	    <independentVar lookup="row">velocities/mach</independentVar>
+	    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+	    <tableData>
+${table2(dry_thrust_table, frange(0., 1.4, 14), range(-5000, 50001, 5000))}
+	    </tableData>
+	</table>
+    </function>
+</turbine_engine>

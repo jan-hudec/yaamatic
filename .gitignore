@@ -1,0 +1,7 @@
+﻿# Python junk:
+*.pyc
+__pycache__
+# Python setuptools junk:
+/build
+/dist
+/*.egg-info
